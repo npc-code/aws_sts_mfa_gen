@@ -27,7 +27,7 @@ role_arn = REDACTED
 source_profile = temp_account_profile
 ```
 
-##Usage
+## Usage
 Given the profiles configured above, execute:
 ``` python cred_gen.py --token_code=$CODE_GENERATED_FROM_MFA_DEVICE --main_profile=main --temp_profile=temp_account_profile```
 
