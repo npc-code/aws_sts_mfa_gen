@@ -1,5 +1,5 @@
+# aws_sts_mfa_gen
 
-#aws_sts_mfa_gen
 Command line utility for generating and refreshing temporary IAM credentials for role assumption where MFA is required.
 See https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/ and https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html for more details.
 ## Installation
