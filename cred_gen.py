@@ -4,11 +4,8 @@ import subprocess
 import time
 from dotenv import dotenv_values
 
-#PROFILE TO MANIPULATE
-#[profile rearc-eng-mfa]
-#aws_access_key_id = return from sts call
-#aws_secret_access_key = return from sts call
-#aws_session_token = return from sts call
+#TODO
+# doc strings and tests
 
 class RearcSTSCredGen:
     def __init__(self, token_code, main_profile, temp_cred_profile):
