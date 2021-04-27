@@ -29,7 +29,9 @@ source_profile = temp_account_profile
 
 ## Usage
 Given the profiles configured above, execute:
-``` python cred_gen.py --token_code=$CODE_GENERATED_FROM_MFA_DEVICE --main_profile=main --temp_profile=temp_account_profile```
+``` 
+python cred_gen.py --token_code=$CODE_GENERATED_FROM_MFA_DEVICE --main_profile=main --temp_profile=temp_account_profile
+```
 
 
 This will generate a new profile within ~/.aws/credentials or update it in place, populated with:
