@@ -7,7 +7,7 @@ See https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/
 - navigate to cloned directory, execute ```touch .env```
 - populate .env file with ```mfa_arn=$ARN_OF_YOUR_MFA_DEVICE```
 - ensure you are using python 3.8.2+ (use virtualenv, pyenv, etc.)
-- execute: ```pip install -r requirements```
+- execute: ```pip install -r requirements.txt```
 
 ## Requirements
 A named profile under ~/.aws/credentials for your main account.  This profile must have permission to assume the role declared in the role profile.
