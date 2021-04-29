@@ -20,8 +20,8 @@ class RearcSTSCredGen:
 
     def update_profile(self):
         credentials = self.session_token()["Credentials"]
-        commands = [f"aws configure set aws_access_key_id {credentials['AccessKeyId']} --profile {self.temp_cred_profile};",
-            f"aws configure set aws_secret_access_key {credentials['SecretAccessKey']} --profile {self.temp_cred_profile};",
+        commands = [f"aws configure set aws_access_key_id {credentials['AccessKeyId']} --profile {self.temp_cred_profile}",
+            f"aws configure set aws_secret_access_key {credentials['SecretAccessKey']} --profile {self.temp_cred_profile}",
             f"aws configure set aws_session_token {credentials['SessionToken']} --profile {self.temp_cred_profile}"]
 
         for command in commands:

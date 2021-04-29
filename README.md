@@ -25,6 +25,7 @@ You must supply the arn of the role that you want to assume.  Name this role rel
 [role_profile]
 role_arn = REDACTED
 source_profile = temp_account_profile
+region = us-east-1
 ```
 
 ## Usage
