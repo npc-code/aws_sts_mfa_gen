@@ -7,7 +7,7 @@ See https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/
 - navigate to cloned directory, execute ```touch .env```
 - populate .env file with ```mfa_arn=$ARN_OF_YOUR_MFA_DEVICE```
 - ensure you are using python 3.8.2+ (use virtualenv, pyenv, etc.)
-- execute: ```pip install -r requirements```
+- execute: ```pip install -r requirements.txt```
 
 ## Requirements
 A named profile under ~/.aws/credentials for your main account.  This profile must have permission to assume the role declared in the role profile.
@@ -30,7 +30,9 @@ region = us-east-1
 
 ## Usage
 Given the profiles configured above, execute:
-``` python cred_gen.py --token_code=$CODE_GENERATED_FROM_MFA_DEVICE --main_profile=main --temp_profile=temp_account_profile```
+``` 
+python cred_gen.py --token_code=$CODE_GENERATED_FROM_MFA_DEVICE --main_profile=main --temp_profile=temp_account_profile
+```
 
 
 This will generate a new profile within ~/.aws/credentials or update it in place, populated with:
