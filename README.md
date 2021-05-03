@@ -46,7 +46,7 @@ aws_session_token = REDACTED
 For clarity's sake, **this will update the profile entries if it already exists.**  make sure you are passing the command a profile you want to update.
 
 You can now use these temporary credentials to assume the role within the target account.  Ex:
-```aws s3 ls --profile=role_profile```
+```aws ec2 describe-instances --profile=role_profile```
 
 
 
